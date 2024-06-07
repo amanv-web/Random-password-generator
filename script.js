@@ -40,11 +40,9 @@ const generatePassword = () => {
     return password;
 };
 btn.addEventListener('click', () => { 
-if (password.length > 0) {
-    alert("Enter any text or paste link");
-} else {
+
     passbox.value = generatePassword();
-}
+
 });
 
 
