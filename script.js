@@ -42,7 +42,7 @@ const generatePassword = () => {
 btn.addEventListener('click', () => {
     if (typeof(password) != "undefined"){
     passbox.value = generatePassword();
-    console.log(length);}
+  }
     else{
         alert("Please select atleast one option");
     
