@@ -40,9 +40,13 @@ const generatePassword = () => {
     return password;
 };
 btn.addEventListener('click', () => {
+    if (typeof(password) != "undefined"){
     passbox.value = generatePassword();
-    console.log(length);
-
+    console.log(length);}
+    else{
+        alert("Please select atleast one option");
+    
+    }
 });
 
 
