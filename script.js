@@ -39,9 +39,9 @@ const generatePassword = () => {
     
     return password;
 };
-btn.addEventListener('click', () => { 
-
+btn.addEventListener('click', () => {
     passbox.value = generatePassword();
+    console.log(length);
 
 });
 
