@@ -40,7 +40,15 @@ const generatePassword = () => {
     return password;
 };
 
+btn.addEventListener('click', () => {
+    if(!capital.checked && !small.checked && !number.checked && !special.checked) {
+        alert('Please select atleast one option');
+        return;
+    }else {
+        passbox.value = generatePassword();
+    }
 
+});
 
 const slide = document.getElementById("slider");
 const length = document.getElementById("value");
