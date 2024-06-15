@@ -39,15 +39,6 @@ const generatePassword = () => {
     
     return password;
 };
-btn.addEventListener('click', () => {
-    if (typeof(password) != "undefined"){
-    passbox.value = generatePassword();
-  }
-    else{
-        alert("Please select atleast one option");
-    
-    }
-});
 
 
 
